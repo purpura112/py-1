@@ -9,3 +9,12 @@ print(list_mixed)
 
 list_example[1] = 10
 print(list_example)
+
+#quantidade de elementos
+print(len(list_example))
+print(len(list_names))
+
+if len(list_example) > 5:
+    print("A lista tem mais de 5 elementos")
+else:
+    print("A lista tem 5 ou menos elementos")
