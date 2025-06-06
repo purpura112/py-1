@@ -19,3 +19,12 @@ def sayHello2(name, greeting="Hello"):
     return "%s %s" % (greeting, name)
 print(sayHello2("Anna"))
 print(sayHello2("Anna", "Hi"))
+
+# parameters can be passed as sequence
+def sayHello3(*args):
+    return " ".join(args)
+print(sayHello3("Hello", "Nara", "and", "welcome!"))
+
+def numbers(*args):
+    return sum(args)
+print("The sum is %d" % numbers(1, 2, 3, 4, 5))
